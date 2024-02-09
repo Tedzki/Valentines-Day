@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import myImage from "./assets/images/bear.gif";
-import yesImage from "./asssets/images/yes.gif";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
