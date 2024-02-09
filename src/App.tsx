@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import myImage from "./assets/images/bear.gif";
+import yesImage from "./asssets/images/yes.gif";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -14,18 +16,13 @@ export default function Page() {
     const phrases = [
       "No",
       "Are you sure?",
-      "Really sure?",
-      "Think again!",
-      "Last chance!",
+      "Bffr, rn babe",
+      "Not me, not ron, yew!",
+      "Maybe you misclicked",
       "Surely not?",
-      "You might regret this!",
+      "Just say yes, <--",
       "Give it another thought!",
-      "Are you absolutely certain?",
-      "This could be a mistake!",
-      "Have a heart!",
-      "Don't be so cold!",
-      "Change of heart?",
-      "Wouldn't you reconsider?",
+      "but but but...",
       "Is that your final answer?",
       "You're breaking my heart ;(",
     ];
@@ -40,23 +37,26 @@ export default function Page() {
         target="_blank"
         rel="noopener noreferrer"
         className="github-link"
-      >
-        Visit Source Code on GitHub
-      </a>
+      ></a>
       <div className="valentine-container">
         {yesPressed ? (
           <>
-            <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-            <div className="text-container">Ok yay!!!</div>
+            <img src="https://i.pinimg.com/originals/5a/96/98/5a9698bf5e591662be47616db01bae32.gif" />
+            <div className="text-container">Ok yay! :)</div>
+            <div className="text-container">
+              It's a date, be ready by 9:00 PM on Valentine's Day!
+            </div>
           </>
         ) : (
           <>
             <img
               className="h-[200px]"
               style={{ width: "400x", height: "240px" }}
-              src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+              src={myImage}
             />
-            <h1 className="text-container">Will you be my Valentine?</h1>
+            <h1 className="text-container">
+              Dear Jenny, will you be my Valentine?
+            </h1>
             <div>
               <button
                 className={"yes-button"}
